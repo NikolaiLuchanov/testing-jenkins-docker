@@ -25,7 +25,7 @@ pipeline {
         sh "cp dist/rectangle_${env.MAJOR_VERSION}.${env.BUILD_NUMBER}.jar /var/www/html/rectangles/all/"
       }
     }
-    stage('Test on CentOS') {
+    stage('Test on CentOS ') {
       agent {
         docker 'fabric8/java-centos-openjdk8-jdk:1.4.0'
       }
